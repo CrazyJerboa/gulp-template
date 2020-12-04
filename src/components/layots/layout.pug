@@ -1,0 +1,24 @@
+block variables
+
+doctype
+html(lang="ru")
+    head
+        meta(charset='UTF-8')
+        title #{pageTitle}
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+
+        link(href="assets/styles/libs.min.css", rel="stylesheet")
+        link(href="assets/styles/styles.css", rel="stylesheet")
+
+    body(class=pageSubclass)
+
+        include ../Header/Header
+
+        main.wrapper
+            block content
+
+        include ../Footer/Footer
+
+        script(src='assets/scripts/libs.min.js')
+        script(src='assets/scripts/scripts.js')
